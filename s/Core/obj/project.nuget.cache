@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "c5TkZUZv9DjPqvGMv/IZps6netxO2vTlyidsFA7hCZ/BCYs4AmVNsywTtqv7S0hJ4CORkg/amnWF/97yDkOAzg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SWIFT\\Desktop\\s\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SWIFT\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\SWIFT\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\SWIFT\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\SWIFT\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
