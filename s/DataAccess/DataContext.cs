@@ -1,5 +1,6 @@
 ﻿using Core.Entities;
 using Core.Entities.Common;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,17 +13,19 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-	public class DataContext : DbContext
+	public class DataContext : IdentityDbContext
 	{
 		public DataContext(DbContextOptions<DataContext> options) : base(options)
 		{
 
 		}
+
 		public DbSet<CompanyImage> CompanyImages { get; set; }
 		public DbSet<Feature> Features { get; set; }
 		public DbSet<Setting> Settings { get; set; }
 		public DbSet<Slider> Sliders { get; set; }
 		public DbSet<WorkProcess> WorkProcesses { get; set; }
+		public new DbSet<AppUser> Users { get; set; }
 		public DbSet<Service> Services { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{	
