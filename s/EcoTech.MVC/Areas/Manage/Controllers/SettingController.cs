@@ -2,12 +2,16 @@
 using Business.Helpers;
 using Business.Repositories;
 using Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace EcoTech.MVC.Areas.Manage.Controllers
 {
 	[Area("Manage")]
-	public class SettingController : Controller
+    [Authorize(Roles = "SuperAdmin")]
+
+    public class SettingController : Controller
 	{
 		readonly ISettingService _settingService;
 		private readonly FileManager _fileService;

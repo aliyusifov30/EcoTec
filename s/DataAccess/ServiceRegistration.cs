@@ -31,6 +31,8 @@ namespace DataAccess
 			services.AddScoped<IWorkProcessRepository,WorkProcessRepository>();
 			services.AddScoped<IFeatureRepository, FeatureRepository>();
 			services.AddScoped<ICompanyImageRepository, CompanyImageRepository>();
+			services.AddScoped<IContactUsRepository, ContactUsRepository>();
+
 		}
 	}
 }

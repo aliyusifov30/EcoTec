@@ -1237,3 +1237,6 @@ C:\Projects\EcoTech\ads\s\EcoTech.MVC\obj\Debug\net7.0\EcoTech.MVC.pdb
 C:\Projects\EcoTech\ads\s\EcoTech.MVC\obj\Debug\net7.0\EcoTech.MVC.genruntimeconfig.cache
 C:\Projects\EcoTech\ads\s\EcoTech.MVC\obj\Debug\net7.0\ref\EcoTech.MVC.dll
 C:\Projects\EcoTech\ads\s\EcoTech.MVC\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Projects\EcoTech\ads\s\EcoTech.MVC\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Projects\EcoTech\ads\s\EcoTech.MVC\bin\Debug\net7.0\MailKit.dll
+C:\Projects\EcoTech\ads\s\EcoTech.MVC\bin\Debug\net7.0\MimeKit.dll

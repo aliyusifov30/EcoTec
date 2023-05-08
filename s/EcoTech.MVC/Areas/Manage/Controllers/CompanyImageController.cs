@@ -2,11 +2,13 @@
 using Business.Helpers;
 using Business.Repositories;
 using Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcoTech.MVC.Areas.Manage.Controllers
 {
 	[Area("Manage")]
+	[Authorize(Roles ="SuperAdmin")]
 	public class CompanyImageController : Controller
 	{
 		readonly ICompanyImageRepository _companyImageRepository;
@@ -17,7 +19,7 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
 			_file = file;
 		}
 
-		public async Task<IActionResult> Index(int page = 1)
+		public IActionResult Index(int page = 1)
 		{
 			var query = _companyImageRepository.GetAll().Take(8);
 

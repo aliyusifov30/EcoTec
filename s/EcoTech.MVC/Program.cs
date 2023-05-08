@@ -1,4 +1,7 @@
 using Business.Helpers;
+using Business.Services;
+using Business.Services.Abstractions;
+using Business.Services.Concrete;
 using Business.Validations;
 using Core.Entities;
 using DataAccess;
@@ -19,6 +22,8 @@ namespace EcoTech.MVC
             builder.Services.AddDataAccessLayerServices();
 
             builder.Services.AddScoped<FileManager>();
+            builder.Services.AddScoped<LayoutService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining(typeof(Business.Validations.SliderValidator)));
 

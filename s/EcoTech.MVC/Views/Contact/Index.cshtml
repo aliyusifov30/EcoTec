@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ContactUs
+@{
 	ViewBag.Title = "Contact Us";
 }
 
@@ -100,42 +101,35 @@
 										<p role="status" aria-live="polite" aria-atomic="true"></p>
 										<ul></ul>
 									</div>
-									<form method="post" aria-label="Contact form">
+									<form method="post" asp-action="index" aria-label="Contact form">
 
 										<p>
 											<label>
 												<span data-name="your-name">
-													<input size="40" aria-invalid="false"
-														   placeholder="Your Name" value="" type="text"
-														   name="your-name" />
+													<input asp-for="FullName"
+														   placeholder="Full Name"  type="text"
+														    />
+												<span class="text-danger" asp-validation-for="FullName"></span>
 												</span>
 											</label>
 										</p>
 										<p>
 											<label>
 												<span data-name="your-email">
-													<input size="40" aria-invalid="false"
-														   placeholder="Your Email" value="" type="email"
-														   name="your-email" />
+													<input asp-for="Email"
+														   placeholder="Your Email" type="email"
+														   />
+														   <span class="text-danger" asp-validation-for="Email"></span>
 												</span>
 											</label>
-										</p>
-										<p>
-											<label>
-												<span data-name="your-subject">
-													<input size="40" aria-invalid="false"
-														   placeholder="Subject" value="" type="text"
-														   name="your-subject" />
-												</span>
-											</label>
-										</p>
+										</p>										
 										<p>
 											<label>
 												<br />
 												<span data-name="your-message">
-													<textarea cols="40" rows="10"
-															  aria-invalid="false" placeholder="Your Message"
-															  name="your-message"></textarea>
+													<textarea asp-for="Text" placeholder="Your Message"
+															  ></textarea>
+												<span class="text-danger" asp-validation-for="Text"></span>
 												</span>
 											</label>
 										</p>
