@@ -66,7 +66,7 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
 
 
 		[HttpPost]
-		public async Task<IActionResult> Edit(Service entity)
+		public async Task<IActionResult> Edit(CompanyImage entity)
 		{
 			var existEntity = await _companyImageRepository.GetByIdAsync(entity.Id);
 

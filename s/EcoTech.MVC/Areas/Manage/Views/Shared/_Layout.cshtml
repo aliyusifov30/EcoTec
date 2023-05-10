@@ -1,4 +1,11 @@
 ﻿
+
+@inject LayoutService services
+
+@{
+    var users = await services.GetAppsAsync(User.Identity.Name);
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -246,6 +253,16 @@
                                                 <p>Company Images</p>
                                             </a>
                                         </li>
+                                        @if (users.IsAdmin == true)
+                                        {
+                                             <li class="nav-item">
+                                            <a asp-action="index" asp-controller="User" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>User</p>
+                                            </a>
+                                        </li>
+                                        }
+                                       
                                     </ul>
                                 </li>
                             </ul>

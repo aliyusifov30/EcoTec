@@ -15,10 +15,12 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
     {
         readonly IServiceRepository _serviceRepository;
         readonly FileManager _file;
-        public ServiceController(IServiceRepository serviceRepository, FileManager file)
+        readonly IWebHostEnvironment _env;
+        public ServiceController(IServiceRepository serviceRepository, FileManager file, IWebHostEnvironment env)
         {
             _serviceRepository = serviceRepository;
             _file = file;
+            _env = env;
         }
 
         public async Task<IActionResult> Index(int page = 1)
@@ -48,16 +50,7 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             {
                 return View();
             }
-
-            if (entity.ImageFile == null)
-            {
-                ModelState.AddModelError("ImageFile", "Image have to fill");
-                return View(entity);
-            }
-
-            var list = await _file.UploadAsync("/uploads/services", entity.ImageFile);
-            entity.Image = list.fileName;
-
+            
             await _serviceRepository.AddAsync(entity);
             await _serviceRepository.SaveAsync();
 
@@ -82,16 +75,9 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
 
             if (existEntity == null) return RedirectToAction("error", "notfound");
 
-            if (entity.ImageFile != null)
-            {
-                var list = await _file.UploadAsync("/uploads/services", entity.ImageFile);
-                await _file.DeleteAsync("/uploads/services/", existEntity.Image);
-                existEntity.Image = list.fileName;
-            }
-
             existEntity.Title = entity.Title;
             existEntity.Description = entity.Description;
-            
+            existEntity.Icon = entity.Icon;
 
             await _serviceRepository.SaveAsync();
 
@@ -114,12 +100,38 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             }
 
             var existEntity = await _serviceRepository.GetByIdAsync(id);
-            await _file.DeleteAsync("/uploads/services/", existEntity.Image);
-
 
             await _serviceRepository.SaveAsync();
 
             return RedirectToAction("index", new { Page = page });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadImage(List<IFormFile> imageFiles)
+        {
+            var file = Request.Form.Files.First();
+
+            var item = await _file.UploadAsync(_env.WebRootPath + "/uploads/services/", file);
+
+            var filePath = "";
+
+            if (_env.IsDevelopment())
+            {
+                filePath = "https://localhost:7105/" + "/uploads/services/" + item.fileName;
+            }
+            else
+            {
+                filePath = "http://aliyusifov.com/" + "/uploads/services/" + item.fileName;
+            }
+
+            //if (System.IO.File.Exists((@"file.txt")))
+            //{
+            //    string existFile = System.IO.File.ReadAllText(@"file.txt");
+            //    existFile = item.fileName + "|||" + existFile;
+            //    System.IO.File.WriteAllText(@"file.txt", existFile);
+            //}
+
+            return Json(new { url = filePath });
         }
 
     }

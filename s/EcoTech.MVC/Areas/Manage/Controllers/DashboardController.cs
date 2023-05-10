@@ -7,7 +7,7 @@ using System.Data;
 namespace EcoTech.MVC.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
 
     public class DashboardController : Controller
     {

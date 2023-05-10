@@ -301,10 +301,10 @@
 															<div class="col-lg-4 col-md-6 service-shortcode-one">
 																<div class="services-item text-left mb-30">
 																	<div class="services-icon">
-																		<div class="service-icon-shape-bg"
+																		@*<div class="service-icon-shape-bg"
 																	 style="background-image:@Url.Content("~/uploads/services/")@item.Image)">
-																		</div>
-																		<i class="ficon flaticon-strategy"></i>
+																		</div>*@
+																		@Html.Raw(item.Icon)
 																	</div>
 																	<div class="services-content">
 																		<h2 class="title">

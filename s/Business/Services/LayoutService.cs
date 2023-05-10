@@ -2,6 +2,7 @@
 using Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Bcpg.OpenPgp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,5 +25,11 @@ namespace Business.Services
 		public async Task<List<ContactUs>> GetContactUs() {
 			return await _contactUsRepository.GetAll().ToListAsync();
 		}
+
+		public async Task<AppUser> GetAppsAsync(string userName)
+		{
+			return await _user.Users.FirstOrDefaultAsync(x => x.UserName.ToLower().Equals(userName));
+		}
+
 	}
 }

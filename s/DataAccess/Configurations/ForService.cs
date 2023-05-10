@@ -13,8 +13,9 @@ namespace DataAccess.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Service> builder)
 		{
-			builder.Property(x => x.Image).IsRequired();
+			builder.Property(x => x.Icon).IsRequired();
 			builder.Property(x=>x.Title).IsRequired().HasMaxLength(50);
-			builder.Property(x=>x.Description).IsRequired().HasMaxLength(200);		}
+			builder.Property(x=>x.Description).IsRequired().HasMaxLength(200);		
+		}
 	}
 }

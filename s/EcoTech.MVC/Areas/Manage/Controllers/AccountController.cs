@@ -1,4 +1,5 @@
-﻿using Business.ViewModels;
+﻿
+using Business.ViewModels;
 using Core.Entities;
 using DataAccess;
 using Microsoft.AspNetCore.Identity;
@@ -31,6 +32,12 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Role()
+        {
+            await _roleManager.CreateAsync(new IdentityRole("Admin"));
+            return Ok();
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]

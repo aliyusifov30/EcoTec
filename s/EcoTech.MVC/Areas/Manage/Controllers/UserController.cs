@@ -1,4 +1,5 @@
-﻿using Business.ViewModels;
+﻿using Business.DTOs;
+using Business.ViewModels;
 using Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -16,16 +17,25 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            var data = _userManager.Users.Select(user => new UserVM
+            int pageSize = 8;
+
+            var query = _userManager.Users.Select(user => new UserVM
             {
                 Id = user.Id,
                 UserName = user.UserName,
                 Email = user.Email,
                 FullName = user.FullName,
-            }).ToList();
-            return View(data);
+            }).AsQueryable().Take(pageSize);
+
+
+            ViewBag.PageSize = pageSize;
+            TempData["Page"] = page;
+
+            var a = PagenatedList<UserVM>.Save(query, page, pageSize);
+
+            return View(a);
         }
 
         public IActionResult Create() {
@@ -35,31 +45,48 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(UserVM userVM) {
+
             if (!ModelState.IsValid) return View();
-            AppUser user = new AppUser 
+
+            AppUser user = null;
+            //todo regex
+            
+            user = await _userManager.Users.FirstOrDefaultAsync(x=>x.Email.ToLower().Equals(userVM.Email.ToLower()));
+            
+            if(user != null)
             {
-                Id=userVM.Id,
+                ModelState.AddModelError("Email", "Exist Email");
+                return View(userVM);
+            }
+            user = new AppUser
+            {
                 UserName = userVM.UserName,
-                Email=userVM.Email,
+                Email = userVM.Email,
                 FullName = userVM.FullName
             };
-            var result=await _userManager.CreateAsync(user, userVM.Password);
+
+
+
+            var result =await _userManager.CreateAsync(user, userVM.Password);
             if (!result.Succeeded)
             {
-                return View();
+                return View(userVM);
             }
+            
             await _userManager.AddToRoleAsync(user, "Admin");
             return RedirectToAction("index", "user");
         }
-        public async Task<IActionResult> EditUser(string id)
+        public async Task<IActionResult> Edit(string id)
         {
 
             var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == id);
+
             var data = new UserVM
             {
                 Email = user.Email,
                 FullName = user.FullName,
                 UserName = user.UserName,
+                Id = id
             };
 
             return View(data);
@@ -67,16 +94,29 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
 
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public async Task<IActionResult> EditUser(UserVM user)
+        public async Task<IActionResult> Edit(UserVM user)
         {
-            var existUser = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == user.UserName);
+            var existUser = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
+
+            if (existUser == null)
+            {
+                return RedirectToAction("notFound", "page");
+            }
+
+            var result = await _userManager.CheckPasswordAsync(existUser, user.Password);
+
+            if (result == false)
+            {
+                ModelState.AddModelError("Password", "Old password wrong");
+                return View(existUser);
+            }
+
+            await _userManager.ChangePasswordAsync(existUser, user.Password, user.NewPassword);
+
             existUser.UserName = user.UserName;
             existUser.Email = user.Email;
             existUser.FullName = user.FullName;
-            if (!string.IsNullOrEmpty(user.Password))
-            {
-                await _userManager.ResetPasswordAsync(existUser, null,user.Password);
-            }
+            
             return RedirectToAction("index");
         }
         public async Task<IActionResult> Delete(string id)
@@ -86,8 +126,9 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             {
                 return RedirectToAction("notfound", "error");
             }
-            await _userManager.UpdateAsync(user);
-            return Ok();
+            await _userManager.DeleteAsync(user);
+            return RedirectToAction("index");
+
         }
     }
 }

@@ -10,7 +10,7 @@ using System.Drawing.Printing;
 namespace EcoTech.MVC.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    [Authorize(Roles = "SuperAdmin")]
+    //[Authorize(Roles = "SuperAdmin")]
 
     public class SliderController : Controller
     {
