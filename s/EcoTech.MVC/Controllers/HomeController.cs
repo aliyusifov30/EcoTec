@@ -13,13 +13,16 @@ namespace EcoTech.MVC.Controllers
         ICompanyImageRepository _companyImageRepository;
         IFeatureRepository _featureRepository;
         IServiceRepository _serviceRepository;
-        public HomeController(ISliderRepository sliderRepository, IWorkProcessRepository workProcessRepositor, ICompanyImageRepository companyImageRepository, IFeatureRepository featureRepository, IServiceRepository serviceRepository)
+        ISupportImageRepository _supportImageRepository;
+        public HomeController(ISliderRepository sliderRepository, IWorkProcessRepository workProcessRepositor, ICompanyImageRepository companyImageRepository, IFeatureRepository featureRepository, IServiceRepository serviceRepository,ISupportImageRepository supportImageRepository)
         {
             _sliderRepository = sliderRepository;
             _workProcessRepositor = workProcessRepositor;
             _companyImageRepository = companyImageRepository;
             _featureRepository = featureRepository;
             _serviceRepository = serviceRepository;
+            _supportImageRepository = supportImageRepository;
+
         }
 
         public IActionResult Index()
@@ -30,14 +33,15 @@ namespace EcoTech.MVC.Controllers
             var companyImages = _companyImageRepository.GetAll(false);
             var feautures = _featureRepository.GetAll(false);
             var services = _serviceRepository.GetAll(false);
-
+            var supportImage = _supportImageRepository.GetSingleAsync((e) => true).Result;
             HomeViewModel model = new HomeViewModel
             {
                 Sliders = sliders.ToList(),
                 WorkProcesses = workProcess.ToList(),
                 CompanyImages = companyImages.ToList(),
                 Features = feautures.ToList(),
-                Services = services.ToList()
+                Services = services.ToList(),
+                SupportImage=supportImage
             };
 
             return View(model);

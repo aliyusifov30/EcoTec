@@ -204,6 +204,39 @@ namespace DataAccess.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("Core.Entities.SupportImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageLeftBottom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageLeftTop")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageRightBottom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageRightTop")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SupportImages");
+                });
+
             modelBuilder.Entity("Core.Entities.WorkProcess", b =>
                 {
                     b.Property<int>("Id")

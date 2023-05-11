@@ -27,6 +27,7 @@ namespace DataAccess
 		public DbSet<WorkProcess> WorkProcesses { get; set; }
 		public new DbSet<AppUser> Users { get; set; }
 		public DbSet<Service> Services { get; set; }
+		public DbSet<SupportImage> SupportImages { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{	
 			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());			
