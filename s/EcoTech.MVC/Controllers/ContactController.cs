@@ -1,5 +1,6 @@
 ﻿using Business.Repositories;
 using Core.Entities;
+using DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcoTech.MVC.Controllers
@@ -7,15 +8,18 @@ namespace EcoTech.MVC.Controllers
     public class ContactController : Controller
     {
         IContactUsRepository _contactUsRepository;
-
-		public ContactController(IContactUsRepository contactUsRepository)
+		ISettingService _settingServiceRepository;
+		public ContactController(IContactUsRepository contactUsRepository,ISettingService settingService)
 		{
 			_contactUsRepository = contactUsRepository;
+            _settingServiceRepository = settingService;
 		}
 
 		public IActionResult Index()
         {
-            return View();
+			ViewData["settings"] = _settingServiceRepository.GetAll().ToDictionary(x => x.Key, x => x.Value);
+
+			return View();
         }
 
         [HttpPost]

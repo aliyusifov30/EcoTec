@@ -1,4 +1,10 @@
 ﻿@using Business.Extentsions
+@using Business.Services
+@inject SettingService settingService;
+
+@{
+	var settings = settingService.GetSettings();
+}
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -111,7 +117,7 @@
 						<div class="header-top-left">
 
 							<div class="welcome-text">
-								<p>Are you need IT Support Engineer? Free Consultant</p>
+								<p>@settings["upper-nav-text"]</p>
 							</div>
 						</div>
 					</div>
@@ -121,14 +127,14 @@
 								<ul class="list-wrap">
 									<li>
 										<i class="far fa-phone"></i>
-										<a href="tel:(+123)54623257"> (+123) 5462 3257</a>
+										<a href="@settings["mobile-phone"]"> @settings["mobile-phone"]</a>
 									</li>
 									<li>
 										<i class="fas fa-envelope"></i>
-										<a href="mailto:envato@gmail.com">envato@gmail.com</a>
+										<a href="mailto:@settings["mail"]">@settings["mail"]</a>
 									</li>
 									<li>
-										<i class="far fa-clock"></i> Mon - Fri: 90:00 - 21:00
+										<i class="far fa-clock"></i> @settings["working-hours"]
 									</li>
 								</ul>
 							</div>
@@ -156,11 +162,12 @@
 							<nav class="menu-nav">
 								<div class="logo-area">
 									<div class="logo">
-										<a href="index.html" rel="home"><img src="~/assets/uploads/2023/03/logo.svg"
+										<a href="index.html" rel="home">
+											<img src="~/@settings["primary-logo-image"]"
 												alt="SpondTech"></a>
 										<div class="logo sticky-logo d-none">
-											<a href="index.html" rel="home"><img
-													src="~/assets/uploads/2023/03/logo.svg" alt="SpondTech"></a>
+											<a href="index.html" rel="home"><img src="~/@settings["primary-logo-image"]" alt="SpondTech">
+											</a>
 										</div>
 									</div>
 								</div>
@@ -294,7 +301,7 @@
 		<nav class="menu-box">
 			<div class="close-btn"><i class="fal fa-times"></i></div>
 			<div class="nav-logo">
-				<a asp-action="index" asp-controller="home" rel="home"><img src="~/assets/uploads/2023/03/logo.svg" alt="SpondTech"></a>
+				<a asp-action="index" asp-controller="home" rel="home"><img src="~@settings["primary-logo-image"]" alt="SpondTech"></a>
 			</div>
 			<div class="menu-outer">
 				<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->

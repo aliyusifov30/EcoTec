@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataAccess.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EcoTech.MVC.Controllers
 {
 	public class AboutUsController : Controller
 	{
-		public IActionResult Index()
+		
+        public IActionResult Index()
 		{
+			
 			return View();
 		}
 	}

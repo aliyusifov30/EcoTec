@@ -15,7 +15,6 @@ namespace Business.Services
 	{
 		UserManager<AppUser> _user;
 		IContactUsRepository _contactUsRepository;
-
 		public LayoutService(UserManager<AppUser> user, IContactUsRepository contactUsRepository)
 		{
 			_user = user;

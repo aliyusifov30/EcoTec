@@ -23,6 +23,7 @@ namespace EcoTech.MVC
 
             builder.Services.AddScoped<FileManager>();
             builder.Services.AddScoped<LayoutService>();
+            builder.Services.AddScoped<SettingService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
 
             builder.Services.AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining(typeof(Business.Validations.SliderValidator)));
