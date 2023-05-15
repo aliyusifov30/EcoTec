@@ -849,11 +849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\git\\Work in progress\\ecoteckall\\ads\\s\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\admin\\Desktop\\git\\Work in progress\\ecoteckall\\ads\\s\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\git\\Work in progress\\ecoteckall\\ads\\s\\Core\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -907,7 +907,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

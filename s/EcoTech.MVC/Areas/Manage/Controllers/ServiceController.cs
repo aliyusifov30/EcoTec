@@ -78,6 +78,7 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
             existEntity.Title = entity.Title;
             existEntity.Description = entity.Description;
             existEntity.Icon = entity.Icon;
+            existEntity.Content = entity.Content;
 
             await _serviceRepository.SaveAsync();
 

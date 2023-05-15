@@ -14,7 +14,8 @@ namespace EcoTech.MVC.Controllers
         IFeatureRepository _featureRepository;
         IServiceRepository _serviceRepository;
         ISupportImageRepository _supportImageRepository;
-        public HomeController(ISliderRepository sliderRepository, IWorkProcessRepository workProcessRepositor, ICompanyImageRepository companyImageRepository, IFeatureRepository featureRepository, IServiceRepository serviceRepository,ISupportImageRepository supportImageRepository)
+        ISettingService _settingService;
+        public HomeController(ISliderRepository sliderRepository, IWorkProcessRepository workProcessRepositor, ICompanyImageRepository companyImageRepository, IFeatureRepository featureRepository, IServiceRepository serviceRepository, ISupportImageRepository supportImageRepository, ISettingService settingService)
         {
             _sliderRepository = sliderRepository;
             _workProcessRepositor = workProcessRepositor;
@@ -22,7 +23,7 @@ namespace EcoTech.MVC.Controllers
             _featureRepository = featureRepository;
             _serviceRepository = serviceRepository;
             _supportImageRepository = supportImageRepository;
-
+            _settingService = settingService;
         }
 
         public IActionResult Index()
@@ -34,6 +35,7 @@ namespace EcoTech.MVC.Controllers
             var feautures = _featureRepository.GetAll(false);
             var services = _serviceRepository.GetAll(false);
             var supportImage = _supportImageRepository.GetSingleAsync((e) => true).Result;
+            var setttings = _settingService.GetAll(false);
             HomeViewModel model = new HomeViewModel
             {
                 Sliders = sliders.ToList(),
@@ -41,7 +43,8 @@ namespace EcoTech.MVC.Controllers
                 CompanyImages = companyImages.ToList(),
                 Features = feautures.ToList(),
                 Services = services.ToList(),
-                SupportImage=supportImage
+                SupportImage=supportImage,
+                Settings = setttings.ToList()
             };
 
             return View(model);

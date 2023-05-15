@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MmPT5cdskR2MTC5AJS878FHiOchRwsgIU5rBzSkfw6skeBwboIr/6Ij98439HNEqWKqkHAMSBcYsR9EhlhxRJQ==",
+  "dgSpecHash": "qgBNjSJQhKiFDXWyk1FCjtV1z0T/lhh3YT1anfjDXSn+GXu17Am6DMpoplW09Nd005NBGyfg0tKG7gMmQSIE9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\git\\Work in progress\\ecoteckall\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

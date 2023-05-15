@@ -1,678 +1,635 @@
 ﻿@{
-	ViewBag.Title = "EcoTech";
-	int number = 1;
+    ViewBag.Title = "EcoTech";
+    int number = 1;
 }
 
 @model HomeViewModel
 
 <main>
-	<div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8">
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-8664367 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-				 data-id="8664367" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a7839d1"
-					 data-id="a7839d1" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-96a9e6b elementor-widget elementor-widget-slider-two-area"
-							 data-id="96a9e6b" data-element_type="widget" data-widget_type="slider-two-area.default">
-							<div class="elementor-widget-container">
-								<section class="slider-area slider-style-one">
-									<div class="slider-active-642a77f1973a5">
-										@foreach (var item in Model.Sliders)
-										{
-											<div class="single-slider slider-bg"
-												 style="background-image:url(@Url.Content("~/uploads/sliders/")@item.Image)">
-												<div class="container">
-													<div class="row">
-														<div class="col-xl-8 mx-auto text-center">
-															<div class="slider-content">
-																<span data-animation="fadeInUp" data-delay=".2s">
-																	It
-																	@item.Title
-																</span>
-																<h2 class="title" data-animation="fadeInUp"
-																	data-delay=".4s">
-																	@item.Description
-																</h2>
-																<div class="slider-btn">
-																	<a href="#" class="btn" data-animation="fadeInLeft"
-																	   data-delay=".8s">@item.ButtonText1 </a>
-																	<a href="#" class="btn btn-two"
-																	   data-animation="fadeInRight"
-																	   data-delay=".8s"><span>@item.ButtonText2</span></a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										}
+    <div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-8664367 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                 data-id="8664367" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a7839d1"
+                     data-id="a7839d1" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-96a9e6b elementor-widget elementor-widget-slider-two-area"
+                             data-id="96a9e6b" data-element_type="widget" data-widget_type="slider-two-area.default">
+                            <div class="elementor-widget-container">
+                                <section class="slider-area slider-style-one">
+                                    <div class="slider-active-642a77f1973a5">
+                                        @foreach (var item in Model.Sliders)
+                                        {
+                                            <div class="single-slider slider-bg"
+                                             style="background-image:url(@Url.Content("~/uploads/sliders/")@item.Image)">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xl-8 mx-auto text-center">
+                                                            <div class="slider-content">
+                                                                <span data-animation="fadeInUp" data-delay=".2s">
+                                                                    It
+                                                                    @item.Title
+                                                                </span>
+                                                                <h2 class="title" data-animation="fadeInUp"
+                                                                data-delay=".4s">
+                                                                    @item.Description
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
 
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-e8a3cbb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="e8a3cbb" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66ecc0a"
-					 data-id="66ecc0a" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ee74aef elementor-widget elementor-widget-section_about_section"
-							 data-id="ee74aef" data-element_type="widget"
-							 data-widget_type="section_about_section.default">
-							<div class="elementor-widget-container">
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin:40px;" class="elementor-section py-2 elementor-top-section elementor-element elementor-element-e8a3cbb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="e8a3cbb" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66ecc0a"
+                     data-id="66ecc0a" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-ee74aef elementor-widget elementor-widget-section_about_section"
+                             data-id="ee74aef" data-element_type="widget"
+                             data-widget_type="section_about_section.default">
+                            <div class="elementor-widget-container">
 
 
-								<section class="support-area">
-									<div class="container">
-										<div class="row align-items-center justify-content-center">
-											<div class="col-lg-6 order-0 order-lg-2">
-												<div class="support-img-wrap">
+                                <section class="support-area">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-6 order-0 order-lg-2">
+                                                <div class="support-img-wrap">
 
 
-													<img decoding="async"
-			   src="~/uploads/supportImages/@Model.SupportImage.ImageLeftTop"
-			   alt="Animate Image" class="wow fadeInDown"
-			   data-wow-delay=".2s">
-													<img decoding="async"
-			   src="~/uploads/supportImages/@Model.SupportImage.ImageRightTop"
-			   alt="Animate Image" class="wow fadeInRight"
-			   data-wow-delay=".3s">
-													<img decoding="async"
-			   src="~/uploads/supportImages/@Model.SupportImage.ImageLeftBottom"
-			   alt="Animate Image" class="wow fadeInLeft"
-			   data-wow-delay=".4s">
-													<img decoding="async"
-			   src="~/uploads/supportImages/@Model.SupportImage.ImageRightBottom"
-			   alt="Animate Image" class="wow fadeInUp"
-			   data-wow-delay=".5s">
+                                                    <img decoding="async"
+                                                         src="~/uploads/supportImages/@Model.SupportImage.ImageLeftTop"
+                                                         alt="Animate Image" class="wow fadeInDown"
+                                                         data-wow-delay=".2s">
+                                                    <img decoding="async"
+                                                         src="~/uploads/supportImages/@Model.SupportImage.ImageRightTop"
+                                                         alt="Animate Image" class="wow fadeInRight"
+                                                         data-wow-delay=".3s">
+                                                    <img decoding="async"
+                                                         src="~/uploads/supportImages/@Model.SupportImage.ImageLeftBottom"
+                                                         alt="Animate Image" class="wow fadeInLeft"
+                                                         data-wow-delay=".4s">
+                                                    <img decoding="async"
+                                                         src="~/uploads/supportImages/@Model.SupportImage.ImageRightBottom"
+                                                         alt="Animate Image" class="wow fadeInUp"
+                                                         data-wow-delay=".5s">
 
-													<div class="work-experience wow zoomIn" data-wow-delay=".6s">
-														<h2 class="title">@Model.SupportImage.Text</h2>
-														
-													</div>
-													<div class="support-shape">
-														<img decoding="async"
-															 src="./assets/uploads/2023/01/support_shape.png">
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-6">
-												<div class="support-content wow fadeInLeft" data-wow-delay=".2s">
-													<div class="section-title mb-25 tg-heading-subheading animation-style2">
-														<span class="sub-title tg-element-title">
-															It Support For
-															Business
-														</span>
-														<h2 class="title tg-element-title">
-															Preparing for your
-															success trusted source in IT services.
-														</h2>
-													</div>
-													<p>
-														Grursus mal suada faci lisis Lorem ipsum dolarorit ametion
-														consectetur elit. Vesti at bulum nec odio aea the dumm
-														ipsumm ipsum that dolocons rsus mal suada and fadolorit to
-														the consectetur elit. All the Lorem Ipsum generators on the
-														Internet tend to repeat that predefined chunks as the
-														necessary making this true generator.
-													</p>
-													<div class="support-list">
-														<ul class="list-wrap">
-															<li>
-																<i class="fas fa-check-circle"></i>Custom shortcodes
-															</li>
-															<li>
-																<i class="fas fa-check-circle"></i>Data Analytics
-															</li>
-															<li>
-																<i class="fas fa-check-circle"></i>It Consultancy
-															</li>
-															<li>
-																<i class="fas fa-check-circle"></i>Data Security
-															</li>
-															<li>
-																<i class="fas fa-check-circle"></i>Our Technology
-																Solution
-															</li>
-															<li>
-																<i class="fas fa-check-circle"></i>Design and
-																Development
-															</li>
-														</ul>
-													</div>
-													<div class="support-contact">
-														<div class="icon pulse">
-															<i class="flaticon-phone-call"></i>
-														</div>
-														<a href="tel:+1-800-456-478-23">+1 -800-456-478-23</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-2226f74 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="2226f74" data-element_type="section"
-				 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-container elementor-column-gap-default container">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-42b4a92"
-					 data-id="42b4a92" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-ab8f517 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="ab8f517" data-element_type="section">
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d41049b"
-									 data-id="d41049b" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fce6dee"
-									 data-id="fce6dee" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-f4b9776 elementor-widget elementor-widget-section-head-two"
-											 data-id="f4b9776" data-element_type="widget"
-											 data-widget_type="section-head-two.default">
-											<div class="elementor-widget-container">
+                                                    <div class="work-experience wow zoomIn" data-wow-delay=".6s">
+                                                        <h2 class="title">@Model.SupportImage.Text</h2>
 
-												<div class="text-center section-title tg-heading-subheading animation-style2">
-													<h6 class="sub-title tg-element-title">
-														Why Choose Us
-													</h6>
-													<h2 class="title tg-element-title">
-														We Excecute Our Ideas Form
-														the Start to Finish
-													</h2>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b71c3d6"
-									 data-id="b71c3d6" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-358b4bc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="358b4bc" data-element_type="section">
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-53d9a70"
-									 data-id="53d9a70" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-3348b77 elementor-widget elementor-widget-working-steps"
-											 data-id="3348b77" data-element_type="widget"
-											 data-widget_type="working-steps.default">
-											<div class="elementor-widget-container">
+                                                    </div>
+                                                    <div class="support-shape">
+                                                        <img decoding="async"
+                                                             src="./assets/uploads/2023/01/support_shape.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="support-content wow fadeInLeft" data-wow-delay=".2s">
+                                                    @Html.Raw(Model.Settings.FirstOrDefault(x=>x.Key == "SupportText").Value)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-2226f74 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="2226f74" data-element_type="section"
+                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default container">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-42b4a92"
+                     data-id="42b4a92" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-ab8f517 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="ab8f517" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d41049b"
+                                     data-id="d41049b" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fce6dee"
+                                     data-id="fce6dee" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-f4b9776 elementor-widget elementor-widget-section-head-two"
+                                             data-id="f4b9776" data-element_type="widget"
+                                             data-widget_type="section-head-two.default">
+                                            <div class="elementor-widget-container">
 
-												<div class="row">
-													@foreach (var item in Model.Features)
-													{
-														<div class="col-lg-3 col-sm-6">
-															<div class="choose-item wow fadeInUp" data-wow-delay="0.2s">
-																<div class="working-steps-items">
-																	<div class="choose-icon">
-																		@Html.Raw(item.Icon)
-																	</div>
-																	<div class="choose-content">
-																		<h2 class="title">
-																			<a href="#">
-																				@item.Title
-																			</a>
-																		</h2>
-																		<p>
-																			@item.Description
-																		</p>
-																		<a href="#" class="read-more">Read More</a>
-																	</div>
-																</div>
-															</div>
-														</div>
+                                                <div class="text-center section-title tg-heading-subheading animation-style2">
+                                                    <h6 class="sub-title tg-element-title">
+                                                        Why Choose Us
+                                                    </h6>
+                                                    <h2 class="title tg-element-title">
+                                                        We Excecute Our Ideas Form
+                                                        the Start to Finish
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b71c3d6"
+                                     data-id="b71c3d6" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-358b4bc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="358b4bc" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-53d9a70"
+                                     data-id="53d9a70" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-3348b77 elementor-widget elementor-widget-working-steps"
+                                             data-id="3348b77" data-element_type="widget"
+                                             data-widget_type="working-steps.default">
+                                            <div class="elementor-widget-container">
 
-													}
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-98c9532 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="98c9532" data-element_type="section"
-				 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25d83bb"
-					 data-id="25d83bb" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-f6fda89 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="f6fda89" data-element_type="section">
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f7d19e4"
-									 data-id="f7d19e4" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-447ea28"
-									 data-id="447ea28" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-bf7d001 elementor-widget elementor-widget-section-head-two"
-											 data-id="bf7d001" data-element_type="widget"
-											 data-widget_type="section-head-two.default">
-											<div class="elementor-widget-container">
+                                                <div class="row">
+                                                    @foreach (var item in Model.Features)
+                                                    {
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="choose-item wow fadeInUp" data-wow-delay="0.2s">
+                                                                <div class="working-steps-items">
+                                                                    <div class="choose-icon">
+                                                                        @Html.Raw(item.Icon)
+                                                                    </div>
+                                                                    <div class="choose-content">
+                                                                        <h2 class="title">
+                                                                            <a href="#">
+                                                                                @item.Title
+                                                                            </a>
+                                                                        </h2>
+                                                                        <p>
+                                                                            @item.Description
+                                                                        </p>
+                                                                        <a href="#" class="read-more">Read More</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-												<div class="text-center section-title tg-heading-subheading animation-style2">
-													<h6 class="sub-title tg-element-title">
-														Our Services
-													</h6>
-													<h2 class="title tg-element-title">
-														We Deal with the Aspects of
-														Professional IT Services
-													</h2>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-33b9419"
-									 data-id="33b9419" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="elementor-section py-2 elementor-inner-section elementor-element elementor-element-7947ede elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="7947ede" data-element_type="section" style="background-color: #02031F;">
-							<div class="elementor-container elementor-column-gap-default container">
-								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-25b106d"
-									 data-id="25b106d" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-de336b1 elementor-widget elementor-widget-section-service"
-											 data-id="de336b1" data-element_type="widget"
-											 data-widget_type="section-service.default">
-											<div class="elementor-widget-container py-5">
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-98c9532 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="98c9532" data-element_type="section"
+                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25d83bb"
+                     data-id="25d83bb" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section class="elementor-section py-5 elementor-inner-section elementor-element elementor-element-f6fda89 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="f6fda89" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f7d19e4"
+                                     data-id="f7d19e4" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-447ea28"
+                                     data-id="447ea28" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-bf7d001 elementor-widget elementor-widget-section-head-two"
+                                             data-id="bf7d001" data-element_type="widget"
+                                             data-widget_type="section-head-two.default">
+                                            <div class="elementor-widget-container">
 
-												<div class="row align-items-center">
+                                                <div class="text-center section-title tg-heading-subheading animation-style2">
+                                                    <h6 class="sub-title tg-element-title">
+                                                        Our Services
+                                                    </h6>
+                                                    <h2 class="title tg-element-title">
+                                                        We Deal with the Aspects of
+                                                        Professional IT Services
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-33b9419"
+                                     data-id="33b9419" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section py-2 elementor-inner-section elementor-element elementor-element-7947ede elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="7947ede" data-element_type="section" style="background-color: #02031F;">
+                            <div class="elementor-container elementor-column-gap-default container">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-25b106d"
+                                     data-id="25b106d" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-de336b1 elementor-widget elementor-widget-section-service"
+                                             data-id="de336b1" data-element_type="widget"
+                                             data-widget_type="section-service.default">
+                                            <div class="elementor-widget-container py-5">
 
-													@foreach (var item in Model.Services)
-													{
-														<div class="col-lg-4 col-md-6 service-shortcode-one">
-															<div class="services-item text-left mb-30">
-																<div class="services-icon">
-																	@*<div class="service-icon-shape-bg"
-																style="background-image:@Url.Content("~/uploads/services/")@item.Image)">
-																</div>*@
-																	@Html.Raw(item.Icon)
-																</div>
-																<div class="services-content">
-																	<h2 class="title">
-																		<a href="service/it-management/index.html">
-																			@item.Title
-																		</a>
-																	</h2>
-																	<p>
-																		@item.Description
-																	</p>
-																</div>
-																<div class="service-shape-bg"
-																	 style="background-image:url(./assets/uploads/2023/01/services_shape.png)">
-																</div>
-															</div>
-														</div>
-													}
-												</div>
+                                                <div class="row align-items-center">
 
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-b7de6d5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="b7de6d5" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-178cd91"
-					 data-id="178cd91" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-18ff75d elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-							 data-id="18ff75d" data-element_type="widget" data-widget_type="divider.default">
-							<div class="elementor-widget-container">
-								<style>
-									/*! elementor - v3.12.1 - 02-04-2023 */
-									.elementor-widget-divider {
-										--divider-border-style: none;
-										--divider-border-width: 1px;
-										--divider-color: #0c0d0e;
-										--divider-icon-size: 20px;
-										--divider-element-spacing: 10px;
-										--divider-pattern-height: 24px;
-										--divider-pattern-size: 20px;
-										--divider-pattern-url: none;
-										--divider-pattern-repeat: repeat-x
-									}
+                                                    <section class="slider-area slider-style-one">
 
-										.elementor-widget-divider .elementor-divider {
-											display: flex
-										}
+                                                        <div class="slider-active-642a77f1973a5">
 
-										.elementor-widget-divider .elementor-divider__text {
-											font-size: 15px;
-											line-height: 1;
-											max-width: 95%
-										}
+                                                                @foreach (var item in Model.Services)
+                                                                {
+                                                            <div class="row d-flex justify-content-center">
+                                                                <div class="col-lg-4">
+                                                                        <div class="single-slider">
+                                                                            <div class="services-item text-left mb-30">
+                                                                                <div class="services-icon">
+                                                                                    <div class="service-icon-shape-bg d-flex justify-content-center align-items-center">
+                                                                                @Html.Raw(@item.Icon)
+                                                                                     
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="services-content">
+                                                                                    <h2 class="title">
+                                                                                        <a asp-action="index" asp-controller="service" asp-route-id="@item.Id">
+                                                                                            @item.Title
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <p>
+                                                                                        @item.Description
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="service-shape-bg"
+                                                                                 style="background-image:url(./assets/uploads/2023/01/services_shape.png)">
+                                                                                </div>
+                                                                            </div>
 
-										.elementor-widget-divider .elementor-divider__element {
-											margin: 0 var(--divider-element-spacing);
-											flex-shrink: 0
-										}
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                                }
+                                                        </div>
+                                                    </section>
+                                                </div>
 
-										.elementor-widget-divider .elementor-icon {
-											font-size: var(--divider-icon-size)
-										}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-b7de6d5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="b7de6d5" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-178cd91"
+                     data-id="178cd91" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-18ff75d elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                             data-id="18ff75d" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                                <style>
+                                    /*! elementor - v3.12.1 - 02-04-2023 */
+                                    .elementor-widget-divider {
+                                        --divider-border-style: none;
+                                        --divider-border-width: 1px;
+                                        --divider-color: #0c0d0e;
+                                        --divider-icon-size: 20px;
+                                        --divider-element-spacing: 10px;
+                                        --divider-pattern-height: 24px;
+                                        --divider-pattern-size: 20px;
+                                        --divider-pattern-url: none;
+                                        --divider-pattern-repeat: repeat-x
+                                    }
 
-										.elementor-widget-divider .elementor-divider-separator {
-											display: flex;
-											margin: 0;
-											direction: ltr
-										}
+                                        .elementor-widget-divider .elementor-divider {
+                                            display: flex
+                                        }
 
-									.elementor-widget-divider--view-line_icon .elementor-divider-separator,
-									.elementor-widget-divider--view-line_text .elementor-divider-separator {
-										align-items: center
-									}
+                                        .elementor-widget-divider .elementor-divider__text {
+                                            font-size: 15px;
+                                            line-height: 1;
+                                            max-width: 95%
+                                        }
 
-										.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
-										.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
-										.elementor-widget-divider--view-line_text .elementor-divider-separator:after,
-										.elementor-widget-divider--view-line_text .elementor-divider-separator:before {
-											display: block;
-											content: "";
-											border-bottom: 0;
-											flex-grow: 1;
-											border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
-										}
+                                        .elementor-widget-divider .elementor-divider__element {
+                                            margin: 0 var(--divider-element-spacing);
+                                            flex-shrink: 0
+                                        }
 
-									.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
-										flex-grow: 0;
-										flex-shrink: 100
-									}
+                                        .elementor-widget-divider .elementor-icon {
+                                            font-size: var(--divider-icon-size)
+                                        }
 
-									.elementor-widget-divider--element-align-left .elementor-divider-separator:before {
-										content: none
-									}
+                                        .elementor-widget-divider .elementor-divider-separator {
+                                            display: flex;
+                                            margin: 0;
+                                            direction: ltr
+                                        }
 
-									.elementor-widget-divider--element-align-left .elementor-divider__element {
-										margin-left: 0
-									}
+                                    .elementor-widget-divider--view-line_icon .elementor-divider-separator,
+                                    .elementor-widget-divider--view-line_text .elementor-divider-separator {
+                                        align-items: center
+                                    }
 
-									.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
-										flex-grow: 0;
-										flex-shrink: 100
-									}
+                                        .elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
+                                        .elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
+                                        .elementor-widget-divider--view-line_text .elementor-divider-separator:after,
+                                        .elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+                                            display: block;
+                                            content: "";
+                                            border-bottom: 0;
+                                            flex-grow: 1;
+                                            border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                        }
 
-									.elementor-widget-divider--element-align-right .elementor-divider-separator:after {
-										content: none
-									}
+                                    .elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
+                                        flex-grow: 0;
+                                        flex-shrink: 100
+                                    }
 
-									.elementor-widget-divider--element-align-right .elementor-divider__element {
-										margin-right: 0
-									}
+                                    .elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+                                        content: none
+                                    }
 
-									.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
-										border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
-									}
+                                    .elementor-widget-divider--element-align-left .elementor-divider__element {
+                                        margin-left: 0
+                                    }
 
-									.elementor-widget-divider--separator-type-pattern {
-										--divider-border-style: none
-									}
+                                    .elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
+                                        flex-grow: 0;
+                                        flex-shrink: 100
+                                    }
 
-										.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
-										.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
-										.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
-										.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
-											width: 100%;
-											min-height: var(--divider-pattern-height);
-											-webkit-mask-size: var(--divider-pattern-size) 100%;
-											mask-size: var(--divider-pattern-size) 100%;
-											-webkit-mask-repeat: var(--divider-pattern-repeat);
-											mask-repeat: var(--divider-pattern-repeat);
-											background-color: var(--divider-color);
-											-webkit-mask-image: var(--divider-pattern-url);
-											mask-image: var(--divider-pattern-url)
-										}
+                                    .elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+                                        content: none
+                                    }
 
-									.elementor-widget-divider--no-spacing {
-										--divider-pattern-size: auto
-									}
+                                    .elementor-widget-divider--element-align-right .elementor-divider__element {
+                                        margin-right: 0
+                                    }
 
-									.elementor-widget-divider--bg-round {
-										--divider-pattern-repeat: round
-									}
+                                    .elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+                                        border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                    }
 
-									.rtl .elementor-widget-divider .elementor-divider__text {
-										direction: rtl
-									}
+                                    .elementor-widget-divider--separator-type-pattern {
+                                        --divider-border-style: none
+                                    }
 
-									.e-con-inner > .elementor-widget-divider,
-									.e-con > .elementor-widget-divider {
-										width: var(--container-widget-width, 100%);
-										--flex-grow: var(--container-widget-flex-grow)
-									}
-								</style>
-								<div class="elementor-divider">
-									<span class="elementor-divider-separator">
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                                        .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
+                                        .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
+                                        .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+                                        .elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
+                                            width: 100%;
+                                            min-height: var(--divider-pattern-height);
+                                            -webkit-mask-size: var(--divider-pattern-size) 100%;
+                                            mask-size: var(--divider-pattern-size) 100%;
+                                            -webkit-mask-repeat: var(--divider-pattern-repeat);
+                                            mask-repeat: var(--divider-pattern-repeat);
+                                            background-color: var(--divider-color);
+                                            -webkit-mask-image: var(--divider-pattern-url);
+                                            mask-image: var(--divider-pattern-url)
+                                        }
 
-		<section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-2c78a45 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="2c78a45" data-element_type="section"
-				 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4775907"
-					 data-id="4775907" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-300f2eb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="300f2eb" data-element_type="section">
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e64aa12"
-									 data-id="e64aa12" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-cbd5d83"
-									 data-id="cbd5d83" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-aef5b50 elementor-widget elementor-widget-section-head-two"
-											 data-id="aef5b50" data-element_type="widget"
-											 data-widget_type="section-head-two.default">
-											<div class="elementor-widget-container">
+                                    .elementor-widget-divider--no-spacing {
+                                        --divider-pattern-size: auto
+                                    }
 
-												<div class="text-center section-title tg-heading-subheading animation-style2">
-													<h6 class="sub-title tg-element-title">
-														How It Work
-													</h6>
-													<h2 class="title tg-element-title">
-														Check Out Our Work Process
-													</h2>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-11eb2ee"
-									 data-id="11eb2ee" data-element_type="column">
-									<div class="elementor-widget-wrap">
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="elementor-section py-2 work-area elementor-inner-section elementor-element elementor-element-2e4cd32 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								 data-id="2e4cd32" data-element_type="section">
-							<div class="elementor-container container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7abcda8"
-									 data-id="7abcda8" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-56ddce3 elementor-widget elementor-widget-working-steps"
-											 data-id="56ddce3" data-element_type="widget"
-											 data-widget_type="working-steps.default">
-											<div class="elementor-widget-container">
-												<section class="work-area fix has-animation py-5">
-													<div class="work-item-wrap">
-														<div class="work-line-shape">
-															<svg xmlns="http://www.w3.org/2000/svg" width="1171.529"
-																 height="170.91" viewBox="0 0 1171.529 170.91">
-																<g fill="none" stroke-width="3">
-																	<path class="dashed1" stroke="rgba(0 0 0 / 8%)"
-																		  stroke-dasharray="12 6" fill-rule="evenodd"
-																		  stroke-linecap="butt"
-																		  stroke-linejoin="miter"
-																		  d="M376.374,5011.81s156,76.64,373.016-32.76c0,0,234.427-134.13,381.43-16.05,0,0,212.18,134.13,410.49-90.01"
-																		  transform="translate(-373.531 -4871.5)" />
-																	<path class="dashed2" stroke="white"
-																		  stroke-dasharray="12 6" fill-rule="evenodd"
-																		  stroke-linecap="butt"
-																		  stroke-linejoin="miter"
-																		  d="M376.374,5011.81s156,76.64,373.016-32.76c0,0,234.427-134.13,381.43-16.05,0,0,212.18,134.13,410.49-90.01"
-																		  transform="translate(-373.531 -4871.5)" />
-																</g>
-															</svg>
-														</div>
-														<div class="row">
+                                    .elementor-widget-divider--bg-round {
+                                        --divider-pattern-repeat: round
+                                    }
 
-															@foreach (var item in Model.WorkProcesses)
-															{
-																<div class="col-lg-3 col-sm-6">
-																	<div class="work-item wow fadeInUp"
-																		 data-wow-delay="0.2s">
-																		<div class="work-icon">
-																			@Html.Raw(item.Icon)
-																			<h4 class="number">@number</h4>
-																		</div>
-																		<div class="work-content">
-																			<h3 class="title">@item.Title</h3>
-																			<p>
-																				@item.Description
-																			</p>
-																		</div>
-																	</div>
-																</div>
-																number++;
-															}
-														</div>
-													</div>
-												</section>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
+                                    .rtl .elementor-widget-divider .elementor-divider__text {
+                                        direction: rtl
+                                    }
 
-		<section class="elementor-section py-5 elementor-top-section elementor-element elementor-element-9c850c3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-				 data-id="9c850c3" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-default container">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f9f5b6"
-					 data-id="7f9f5b6" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ded1fa8 elementor-widget elementor-widget-brand-slider"
-							 data-id="ded1fa8" data-element_type="widget" data-widget_type="brand-slider.default">
-							<div class="elementor-widget-container">
-								<script>
-									jQuery(document).ready(function () {
-										jQuery('.brand-area-642a77f1a5459').slick({
-											dots: false,
-											infinite: true,
-											speed: 1000,
-											autoplay: true,
-											arrows: false,
-											slidesToShow: 6,
-											slidesToScroll: 2,
-											responsive: [
-												{
-													breakpoint: 1200,
-													settings: {
-														slidesToShow: 6,
-														slidesToScroll: 1,
-														infinite: true,
-													}
-												},
-												{
-													breakpoint: 992,
-													settings: {
-														slidesToShow: 4,
-														slidesToScroll: 1
-													}
-												},
-												{
-													breakpoint: 767,
-													settings: {
-														slidesToShow: 3,
-														slidesToScroll: 1,
-														arrows: false,
-													}
-												},
-												{
-													breakpoint: 575,
-													settings: {
-														slidesToShow: 2,
-														slidesToScroll: 1,
-														arrows: false,
-													}
-												},
-											]
-										});
-									});
-								</script>
+                                    .e-con-inner > .elementor-widget-divider,
+                                    .e-con > .elementor-widget-divider {
+                                        width: var(--container-widget-width, 100%);
+                                        --flex-grow: var(--container-widget-flex-grow)
+                                    }
+                                </style>
+                                <div class="elementor-divider">
+                                    <span class="elementor-divider-separator">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-								<div class="row brand-area-642a77f1a5459">
+        <section class="elementor-section py-2 elementor-top-section elementor-element elementor-element-2c78a45 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="2c78a45" data-element_type="section"
+                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4775907"
+                     data-id="4775907" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-300f2eb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="300f2eb" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e64aa12"
+                                     data-id="e64aa12" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-cbd5d83"
+                                     data-id="cbd5d83" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-aef5b50 elementor-widget elementor-widget-section-head-two"
+                                             data-id="aef5b50" data-element_type="widget"
+                                             data-widget_type="section-head-two.default">
+                                            <div class="elementor-widget-container">
+
+                                                <div class="text-center section-title tg-heading-subheading animation-style2">
+                                                    <h6 class="sub-title tg-element-title">
+                                                        How It Work
+                                                    </h6>
+                                                    <h2 class="title tg-element-title">
+                                                        Check Out Our Work Process
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-11eb2ee"
+                                     data-id="11eb2ee" data-element_type="column">
+                                    <div class="elementor-widget-wrap">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section py-2 work-area elementor-inner-section elementor-element elementor-element-2e4cd32 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                 data-id="2e4cd32" data-element_type="section">
+                            <div class="elementor-container container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7abcda8"
+                                     data-id="7abcda8" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-56ddce3 elementor-widget elementor-widget-working-steps"
+                                             data-id="56ddce3" data-element_type="widget"
+                                             data-widget_type="working-steps.default">
+                                            <div class="elementor-widget-container">
+                                                <section class="work-area fix has-animation py-5">
+                                                    <div class="work-item-wrap">
+                                                        <div class="work-line-shape">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1171.529"
+                                                                 height="170.91" viewBox="0 0 1171.529 170.91">
+                                                                <g fill="none" stroke-width="3">
+                                                                    <path class="dashed1" stroke="rgba(0 0 0 / 8%)"
+                                                                          stroke-dasharray="12 6" fill-rule="evenodd"
+                                                                          stroke-linecap="butt"
+                                                                          stroke-linejoin="miter"
+                                                                          d="M376.374,5011.81s156,76.64,373.016-32.76c0,0,234.427-134.13,381.43-16.05,0,0,212.18,134.13,410.49-90.01"
+                                                                          transform="translate(-373.531 -4871.5)" />
+                                                                    <path class="dashed2" stroke="white"
+                                                                          stroke-dasharray="12 6" fill-rule="evenodd"
+                                                                          stroke-linecap="butt"
+                                                                          stroke-linejoin="miter"
+                                                                          d="M376.374,5011.81s156,76.64,373.016-32.76c0,0,234.427-134.13,381.43-16.05,0,0,212.18,134.13,410.49-90.01"
+                                                                          transform="translate(-373.531 -4871.5)" />
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="row">
+
+                                                            @foreach (var item in Model.WorkProcesses)
+                                                            {
+                                                                <div class="col-lg-3 col-sm-6">
+                                                                    <div class="work-item wow fadeInUp"
+                                                                     data-wow-delay="0.2s">
+                                                                        <div class="work-icon">
+                                                                            @Html.Raw(item.Icon)
+                                                                            <h4 class="number">@number</h4>
+                                                                        </div>
+                                                                        <div class="work-content">
+                                                                            <h3 class="title">@item.Title</h3>
+                                                                            <p>
+                                                                                @item.Description
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                number++;
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="elementor-section py-5 elementor-top-section elementor-element elementor-element-9c850c3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="9c850c3" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default container">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f9f5b6"
+                     data-id="7f9f5b6" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-ded1fa8 elementor-widget elementor-widget-brand-slider"
+                             data-id="ded1fa8" data-element_type="widget" data-widget_type="brand-slider.default">
+                            <div class="elementor-widget-container">
+                                <script>
+                                    jQuery(document).ready(function () {
+                                        jQuery('.brand-area-642a77f1a5459').slick({
+                                            dots: false,
+                                            infinite: true,
+                                            speed: 1000,
+                                            autoplay: true,
+                                            arrows: false,
+                                            slidesToShow: 6,
+                                            slidesToScroll: 2,
+                                            responsive: [
+                                                {
+                                                    breakpoint: 1200,
+                                                    settings: {
+                                                        slidesToShow: 6,
+                                                        slidesToScroll: 1,
+                                                        infinite: true,
+                                                    }
+                                                },
+                                                {
+                                                    breakpoint: 992,
+                                                    settings: {
+                                                        slidesToShow: 4,
+                                                        slidesToScroll: 1
+                                                    }
+                                                },
+                                                {
+                                                    breakpoint: 767,
+                                                    settings: {
+                                                        slidesToShow: 3,
+                                                        slidesToScroll: 1,
+                                                        arrows: false,
+                                                    }
+                                                },
+                                                {
+                                                    breakpoint: 575,
+                                                    settings: {
+                                                        slidesToShow: 2,
+                                                        slidesToScroll: 1,
+                                                        arrows: false,
+                                                    }
+                                                },
+                                            ]
+                                        });
+                                    });
+                                </script>
+
+                                <div class="row brand-area-642a77f1a5459">
 
 
-									@foreach (var item in Model.CompanyImages)
-									{
-										<div class="col-12" style="width:200px;height:200px;object-fit:cover">
-											<div class="brand-item" style="width:100%;height:100%;">
+                                    @foreach (var item in Model.CompanyImages)
+                                    {
+                                        <div class="col-12" style="width:200px;height:200px;object-fit:cover">
+                                            <div class="brand-item" style="width:100%;height:100%;">
 
-												<img decoding="async" src="~/uploads/companyImages/@item.Image"
-				 alt="Brand Image" style="width:100%;height:100%;object-fit:cover;	">
-											</div>
-										</div>
-									}
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+                                                <img decoding="async" src="~/uploads/companyImages/@item.Image"
+                                                 alt="Brand Image" style="width:100%;height:100%;object-fit:cover;	">
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </main>

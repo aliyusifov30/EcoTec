@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QFG9UUvLuEBQy6ILYJJXkBC2R+MVQTlLeeO1Ji16EKRkmfOw1uHGWklYbZ5vcpXbLx9MOQeArJK22/DXMZg9kA==",
+  "dgSpecHash": "uCaCYg19kbMN+DnnZoJgEZth+l3OJxuopQXjBNYL21GWSs9w7PkszV9+2EhN35/k0Nk39bBeOfyZ0aR9CY5AYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\git\\Work in progress\\ecoteckall\\ads\\s\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",

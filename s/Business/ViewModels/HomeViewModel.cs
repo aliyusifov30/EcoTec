@@ -15,7 +15,7 @@ namespace Business.ViewModels
         public List<CompanyImage> CompanyImages { get; set; }
         public List<Feature> Features { get; set; }
         public List<Service> Services { get; set; }
-
+        public List<Setting> Settings { get; set; }
         public SupportImage SupportImage { get; set; }
     }
 }
