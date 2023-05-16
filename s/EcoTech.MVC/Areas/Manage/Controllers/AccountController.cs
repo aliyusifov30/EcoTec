@@ -35,7 +35,17 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
         [HttpGet]
         public async Task<IActionResult> Role()
         {
-            await _roleManager.CreateAsync(new IdentityRole("Admin"));
+            //await _roleManager.CreateAsync(new IdentityRole("Admin"));
+
+            var user = new AppUser()
+            {
+                UserName = "ODFGroup",
+                Email = "odfgroup@mail.ru"
+			};
+
+            await _usersManager.CreateAsync(user, "Demebosseydimehebbet.2002");
+            await _usersManager.AddToRoleAsync(user, "OdfRole");
+
             return Ok();
         }
 
@@ -43,8 +53,7 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(AdminLoginViewModel loginVM) {
             if (!ModelState.IsValid) return View();
-            if (!ModelState.IsValid) return View();
-
+           
             AppUser admin = await _usersManager.FindByNameAsync(loginVM.UserName);
 
             if (admin == null)

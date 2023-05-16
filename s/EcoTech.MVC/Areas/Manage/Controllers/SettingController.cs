@@ -9,7 +9,7 @@ using System.Data;
 namespace EcoTech.MVC.Areas.Manage.Controllers
 {
 	[Area("Manage")]
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "SuperAdmin,OdfRole")]
 
     public class SettingController : Controller
 	{
@@ -26,11 +26,22 @@ namespace EcoTech.MVC.Areas.Manage.Controllers
 		public async Task<IActionResult> Index(int page = 1)
 		{
 			var settings = _settingService.GetAll(false);
+
+			settings = settings.Where(x => !x.Key.Equals("ODF"));
 			ViewBag.PageSize = 8;
 			return View(PagenatedList<Setting>.Save(settings, page, 8));
 		}
 
-		public async Task<IActionResult> Edit(int id)
+        [Authorize(Roles = "OdfRole")]
+        public async Task<IActionResult> Odf(int page = 1)
+        {
+            var settings = _settingService.GetAll(false);
+            ViewBag.PageSize = 8;
+            return View(PagenatedList<Setting>.Save(settings, page, 8));
+        }
+
+
+        public async Task<IActionResult> Edit(int id)
 		{
 			var setting = await _settingService.GetAsync(x=>x.Id == id);
 			return View(setting);

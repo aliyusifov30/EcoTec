@@ -28,6 +28,7 @@ namespace DataAccess
 		public new DbSet<AppUser> Users { get; set; }
 		public DbSet<Service> Services { get; set; }
 		public DbSet<SupportImage> SupportImages { get; set; }
+		public DbSet<SocialMedia> SocialMedias { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{	
 			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());			

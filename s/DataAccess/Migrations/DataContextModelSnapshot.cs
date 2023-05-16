@@ -204,6 +204,30 @@ namespace DataAccess.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("Core.Entities.SocialMedia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SocialMedias");
+                });
+
             modelBuilder.Entity("Core.Entities.SupportImage", b =>
                 {
                     b.Property<int>("Id")

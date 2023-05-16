@@ -12473,19 +12473,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\SWIFT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
       "projectName": "EcoTech.MVC",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\EcoTech.MVC\\obj\\",
+      "projectPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\EcoTech.MVC\\EcoTech.MVC.csproj",
+      "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\EcoTech.MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12493,17 +12498,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\Business\\Business.csproj"
+            "C:\\Users\\SWIFT\\Desktop\\ads\\s\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\Business\\Business.csproj"
             },
-            "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Git\\Work in progress\\ads\\s\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\SWIFT\\Desktop\\ads\\s\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -12548,7 +12554,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

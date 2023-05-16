@@ -1,9 +1,11 @@
 ﻿@using Business.Extentsions
 @using Business.Services
+@using Core.Entities
 @inject SettingService settingService;
-
+@inject LayoutService layoutService;
 @{
 	var settings = settingService.GetSettings();
+	var medias = await layoutService.GetMediasAsync();
 }
 <!DOCTYPE html>
 <html lang="en-US">
@@ -140,8 +142,11 @@
 							</div>
 							<div class="header-social-wrap">
 								<ul class="list-wrap">
-									<li> <a href="@settings["Facebook"]" target="_blank"><i class="fab fa-facebook-f"></i></a> </li>
-									<li> <a href="@settings["Instagram"]" target="_blank"><i class="bi bi-instagram"></i></a> </li>
+
+									@foreach (var item in medias)
+									{
+										<li> <a href="@item.Link" target="_blank">@item.Icon</a> </li>
+									}
 								</ul>
 							</div>
 						</div>
@@ -267,7 +272,7 @@
 			<div class="footer-top-area">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-12 d-flex justify-content-start">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-start">
 							<div class="menu-it-services-container">
 								<ul id="menu-it-services" class="menu">
 									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
@@ -286,8 +291,10 @@
 									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
 										<div class="social-profile-info">
 											<ul class="list-wrap">
-												<li> <a href="@settings["Facebook"]" target="_blank"><i class="fab fa-facebook-f"></i></a> </li>
-												<li> <a href="@settings["Instagram"]" target="_blank"><i class="bi bi-instagram"></i></a> </li>
+												@foreach (var item in medias)
+												{
+													<li> <a href="@item.Link" target="_blank">@item.Icon</a> </li>
+												}
 											</ul>
 										</div>
 									</li>
@@ -297,7 +304,27 @@
 
 			
 						</div>
-						<div class="col-lg-6 col-md-12 d-flex justify-content-end">
+						<div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex justify-content-end">
+							<div id="nav_menu-8" class="widget_nav_menu">
+								<div class="widget_nav_menu footer-widget">
+									<div class="footer-widget-title">
+										<h4>Services</h4>
+									</div>
+									<div class="menu-support-container">
+										<ul id="menu-support" class="menu">
+											
+											@foreach (var item in Model.Services)
+											{
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
+													<a asp-action="index" asp-controller="service" asp-route-id="@item.Id">@item.Title</a>
+												</li>
+											}
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex justify-content-end">
 							<div id="nav_menu-8" class="widget_nav_menu">
 								<div class="widget_nav_menu footer-widget">
 									<div class="footer-widget-title">
@@ -305,12 +332,10 @@
 									</div>
 									<div class="menu-support-container">
 										<ul id="menu-support" class="menu">
-											<li
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
+											<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
 												<a asp-action="">Contact us</a>
 											</li>
-											<li
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
+											<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
 												<a asp-action="">About us</a>
 											</li>
 										</ul>
@@ -324,32 +349,11 @@
 			<div class="footer-bottom-area">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-lg-6">
+						<div class="col-lg-12 text-center">
 							<div class="default-copyright-text copyright-text">
-								<p>
-									Copyright © 2023 All Rights Reserved </p>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="copyright-widgets">
-								<section id="nav_menu-5" class="widget widget_nav_menu">
-									<div class="menu-footer-widgets-menu-container">
-										<ul id="menu-footer-widgets-menu" class="menu">
-											<li id="menu-item-954"
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-954">
-												<a href="#">Privacy</a>
-											</li>
-											<li id="menu-item-953"
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-953">
-												<a href="#">Membership</a>
-											</li>
-											<li id="menu-item-955"
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-955">
-												<a href="#">Contact Us</a>
-											</li>
-										</ul>
-									</div>
-								</section>
+								<p class="text-center">
+									@Html.Raw(settings["ODF"])
+								</p>
 							</div>
 						</div>
 					</div>

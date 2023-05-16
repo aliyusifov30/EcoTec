@@ -2,6 +2,7 @@
 using Core.Entities;
 using DataAccess.Repositories;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -33,6 +34,7 @@ namespace DataAccess
 			services.AddScoped<ICompanyImageRepository, CompanyImageRepository>();
 			services.AddScoped<IContactUsRepository, ContactUsRepository>();
 			services.AddScoped<ISupportImageRepository, SupportImageRepository>();
+			services.AddScoped<ISocialMediaRepository, SocialMediaRepository>();
 
 		}
 	}

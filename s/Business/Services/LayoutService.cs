@@ -15,13 +15,15 @@ namespace Business.Services
 	{
 		UserManager<AppUser> _user;
 		IContactUsRepository _contactUsRepository;
-		public LayoutService(UserManager<AppUser> user, IContactUsRepository contactUsRepository)
-		{
-			_user = user;
-			_contactUsRepository = contactUsRepository;
-		}
+		ISocialMediaRepository _socialMediaRepository;
+        public LayoutService(UserManager<AppUser> user, IContactUsRepository contactUsRepository, ISocialMediaRepository socialMediaRepository)
+        {
+            _user = user;
+            _contactUsRepository = contactUsRepository;
+            _socialMediaRepository = socialMediaRepository;
+        }
 
-		public async Task<List<ContactUs>> GetContactUs() {
+        public async Task<List<ContactUs>> GetContactUs() {
 			return await _contactUsRepository.GetAll().ToListAsync();
 		}
 
@@ -30,5 +32,10 @@ namespace Business.Services
 			return await _user.Users.FirstOrDefaultAsync(x => x.UserName.ToLower().Equals(userName));
 		}
 
-	}
+        public async Task<List<SocialMedia>> GetMediasAsync()
+        {
+            return await _socialMediaRepository.GetAll(false).ToListAsync();
+        }
+
+    }
 }

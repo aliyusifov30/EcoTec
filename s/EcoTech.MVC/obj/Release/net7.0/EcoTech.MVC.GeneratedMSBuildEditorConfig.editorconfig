@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Odf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcT2RmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +94,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Create.cshtml]
@@ -134,6 +162,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
