@@ -6,6 +6,7 @@
 @{
 	var settings = settingService.GetSettings();
 	var medias = await layoutService.GetMediasAsync();
+	var services = await layoutService.GetServicesAsync();
 }
 <!DOCTYPE html>
 <html lang="en-US">
@@ -313,7 +314,7 @@
 									<div class="menu-support-container">
 										<ul id="menu-support" class="menu">
 											
-											@foreach (var item in Model.Services)
+											@foreach (var item in services)
 											{
 												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-643">
 													<a asp-action="index" asp-controller="service" asp-route-id="@item.Id">@item.Title</a>

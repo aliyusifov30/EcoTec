@@ -150,3 +150,22 @@ C:\Users\admin\Desktop\Git\Work in progress\ads\s\DataAccess\obj\Debug\net7.0\re
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.pdb
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\Business.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\Core.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\Business.pdb
+C:\Projects\EcoTech\copy\ads\s\DataAccess\bin\Debug\net7.0\Core.pdb
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CopyComplete
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+C:\Projects\EcoTech\copy\ads\s\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

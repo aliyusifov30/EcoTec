@@ -1,7 +1,7 @@
 ﻿@inject LayoutService services
 
 @{
-	var users = await services.GetAppsAsync(User.Identity.Name);
+	var users = await services.GetAppsAsync(User?.Identity.Name);
 }
 
 <!DOCTYPE html>
@@ -268,7 +268,7 @@
 										<p>Social Medias</p>
 									</a>
 								</li>
-								@if (users.IsAdmin == true)
+								@if (users?.IsAdmin == true)
 								{
 									<li class="nav-item">
 										<a asp-action="index" asp-controller="User" class="nav-link">

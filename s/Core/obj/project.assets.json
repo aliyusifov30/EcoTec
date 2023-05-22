@@ -844,23 +844,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SWIFT\\.nuget\\packages\\": {},
+    "C:\\Users\\Elshan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Projects\\EcoTech\\copy\\ads\\s\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SWIFT\\Desktop\\ads\\s\\Core\\obj\\",
+      "projectPath": "C:\\Projects\\EcoTech\\copy\\ads\\s\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Elshan\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\EcoTech\\copy\\ads\\s\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Elshan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -869,7 +869,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -913,7 +912,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

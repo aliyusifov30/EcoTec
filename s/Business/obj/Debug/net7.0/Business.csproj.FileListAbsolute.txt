@@ -118,3 +118,18 @@ C:\Users\admin\Desktop\Git\Work in progress\ads\s\Business\obj\Debug\net7.0\Busi
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\Business\obj\Debug\net7.0\refint\Business.dll
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\Business\obj\Debug\net7.0\Business.pdb
 C:\Users\admin\Desktop\Git\Work in progress\ads\s\Business\obj\Debug\net7.0\ref\Business.dll
+C:\Projects\EcoTech\copy\ads\s\Business\bin\Debug\net7.0\Business.deps.json
+C:\Projects\EcoTech\copy\ads\s\Business\bin\Debug\net7.0\Business.dll
+C:\Projects\EcoTech\copy\ads\s\Business\bin\Debug\net7.0\Business.pdb
+C:\Projects\EcoTech\copy\ads\s\Business\bin\Debug\net7.0\Core.dll
+C:\Projects\EcoTech\copy\ads\s\Business\bin\Debug\net7.0\Core.pdb
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.csproj.AssemblyReference.cache
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.AssemblyInfoInputs.cache
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.AssemblyInfo.cs
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.csproj.CoreCompileInputs.cache
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.csproj.CopyComplete
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.dll
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\refint\Business.dll
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\Business.pdb
+C:\Projects\EcoTech\copy\ads\s\Business\obj\Debug\net7.0\ref\Business.dll

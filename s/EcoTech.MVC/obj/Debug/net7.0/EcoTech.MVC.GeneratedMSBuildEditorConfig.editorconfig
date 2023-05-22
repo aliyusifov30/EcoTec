@@ -9,177 +9,177 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EcoTech.MVC
 build_property.RootNamespace = EcoTech.MVC
-build_property.ProjectDir = C:\Users\SWIFT\Desktop\ads\s\EcoTech.MVC\
+build_property.ProjectDir = C:\Projects\EcoTech\copy\ads\s\EcoTech.MVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\SWIFT\Desktop\ads\s\EcoTech.MVC
+build_property.MSBuildProjectDirectory = C:\Projects\EcoTech\copy\ads\s\EcoTech.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Account/Login.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFjY291bnRcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbXBhbnlJbWFnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbXBhbnlJbWFnZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/CompanyImage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbXBhbnlJbWFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/ContactUs/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/ContactUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbnRhY3RVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/ContactUs/Message.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/ContactUs/Message.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbnRhY3RVc1xNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Dashboard/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Feature/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcnZpY2VcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcnZpY2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcnZpY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Odf.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Setting/Odf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcT2RmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Shared/_Layout.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SocialMedia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNvY2lhbE1lZGlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/SupportImage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1cHBvcnRJbWFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFVzZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFVzZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFVzZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Create.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFdvcmtQcm9jZXNzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Edit.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFdvcmtQcm9jZXNzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/WorkProcess/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFdvcmtQcm9jZXNzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/_ViewImports.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Areas/Manage/Views/_ViewStart.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Areas/Manage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/AboutUs/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/AboutUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Contact/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Home/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Service/Index.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/_ViewImports.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/_ViewStart.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SWIFT/Desktop/ads/s/EcoTech.MVC/Views/Shared/_Layout.cshtml]
+[C:/Projects/EcoTech/copy/ads/s/EcoTech.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n499rfenbc
